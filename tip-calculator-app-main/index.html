@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="container-card">
+            <h1 class="logo"><img src="images/logo.svg" alt=""></h1>
+            <div class="card">
+                <form action="POST" class="formulario">
+                    <div class="seccion">
+                        <div class="head-title">
+                            <p>Bill</p>
+                            <p class="messague">can't be zero</p>
+                        </div>
+                        <div class="value">
+                            <img src="images/icon-dollar.svg" alt="">
+                            <input type="text" class="bill" placeholder="0">
+                        </div>
+                    </div>
+
+                    <div class="seccion">
+                        <p>Select Tip %</p>
+                        <div class="percentages">
+                            <input type="button" class="percentage " value="5%">
+                            <input type="button" class="percentage" value="10%">
+                            <input type="button" class="percentage active" value="15%">
+                            <input type="button" class="percentage " value="25%">
+                            <input type="button" class="percentage" value="50%">
+                            <input type="text" class="percentage custom" placeholder="CUSTOM">
+                        </div>
+                    </div>
+
+                    <div class="seccion">
+                        <div class="head-title">
+                            <p>Number of People</p>
+                            <p class="messague">can't be zero</p>
+                        </div>
+
+                        <div class="value">
+                            <img src="images/icon-person.svg" alt="">
+                            <input type="text" class="people" placeholder="0">
+                        </div>
+                    </div>
+                </form>
+                <div class="results">
+                    <div class="content-resultd">
+                        <div class="sec">
+                            <div class="info">
+                                <p>Tim Amount</p>
+                                <p class="person">/ person</p>
+                            </div>
+                            <p class="result amount">$0.00</p>
+                        </div>
+
+                        <div class="sec">
+                            <div class="info">
+                                <p>Total</p>
+                                <p class="person">/ person</p>
+                            </div>
+                            <p class="result total">$0.00</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn" id="reset">Reset</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
